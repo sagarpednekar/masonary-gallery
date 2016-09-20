@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<div id="pin">
+  <div class="box">
+    
+  </div>
+    <% @posts.each do |post| %>
+        <%= image_tag post.image.url(:thumb) %> 
+    <% end %>
+</div>
+
